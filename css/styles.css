@@ -120,13 +120,24 @@ body {
 }
 
 .top-menu .link {
-    color: var(--headline-color);
+    color: var(--headline-color);    
+}
+
+.link.contact {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
 }
 
 .link.current,
 .link:hover,
 .link:focus {
     color: var(--accent-color);
+}
+
+.icon-contact {
+   fill: currentColor;
 }
 
 .card-link {
@@ -331,14 +342,26 @@ body {
  .icon-social {
     width: 20px;
     height:20px;
+    fill: currentColor;
  }
 
  .circle {
     width: 44px;
-    height: 44px;
-    background-color: #2196F3;
+    height: 44px;    
     padding: 12px;
     border-radius: 50%;
+    color: #AFB1B8;
+ }
+
+ .circle:hover {
+   background-color: #2196F3;
+   color: #FFF;
+ }
+
+ .icon-social {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
  }
 
  .logos {
@@ -347,16 +370,23 @@ body {
  }
 
  .client-logo {
+   display: block;
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     padding: 16px 32px;
+    color: #AFB1B8;
  }
 
- .svg-logo {
+ .client-logo:hover {
+   border-color: #2196F3;
+   color: #2196F3;
+ }
+ .icon-logo {
     width: 106px;
-    height: 60px;    
+    height: 60px;   
+    fill: currentColor; 
  }
 
  .footer-block {
