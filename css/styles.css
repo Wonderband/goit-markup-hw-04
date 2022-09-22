@@ -341,6 +341,7 @@ body {
     padding: 12px;
     border-radius: 50%;
     color: #AFB1B8;
+    display: block;
  }
 
  .circle:hover {
