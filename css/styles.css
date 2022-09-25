@@ -14,7 +14,7 @@
 body {
     font-family: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
     color: var(--text-color);
-    background-color: var(--bg-color); 
+    background-color: var(--white-color); 
 }
 
 
@@ -178,7 +178,11 @@ body {
     background-image: linear-gradient(to right,
     rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url("../images/banner.jpg");
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--bg-hero);
+    background-size: cover;
  }
 
  .hero > .container {
@@ -224,17 +228,18 @@ body {
  }
 
  .text-box {
-    width: 270px;
-    background-color: var(--bg-color);
+    width: 270px;    
  }
 
  .icon-wrapper {
     width: 270px;
     height: 120px;
-    background-color: #F5F4FA;
+    background-color: var(--bg-color-grey);
     border-radius: 4px;
     margin-bottom: 30px;
-    padding: 25px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
 
  .icon-advant {  
@@ -301,7 +306,7 @@ body {
  }
 
  .team-text {
-    padding: 30px 0 16px;
+    padding: 30px 0 0;
     background-color: var(--white-color);
  }
 
@@ -319,13 +324,19 @@ body {
      text-align: center;
      line-height: 1.2;
      letter-spacing: 0.03em;
-     margin: 0;
+     margin: 0 0 16px;
  }
 
- .social-wrapper {
-    padding: 0 32px 30px ;
+ .social-div {
+   margin-bottom: 30px;
+ }
+
+
+ .list-items.social-wrapper {    
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     background-color: var(--white-color);
  }
 
@@ -361,13 +372,14 @@ body {
  }
 
  .client-logo {
-   display: block;
-    width: 170px;
-    height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    padding: 16px 32px;
-    color: #AFB1B8;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 170px;
+   height: 92px;
+   border: 1px solid #AFB1B8;
+   border-radius: 4px;   
+   color: #AFB1B8;
  }
 
  .client-logo:hover {
@@ -386,9 +398,8 @@ body {
  }
 
  .footer-block .container {
-   display: flex;   
-   flex-wrap: wrap;   
-   height: 132px;
+   display: flex;
+   align-items: baseline;   
    gap: 70px;
  }
  
@@ -435,8 +446,7 @@ body {
 
   .footer-social-wrapper {
       display: flex;
-      justify-content: space-between;
-      padding-top: 20px;
+      justify-content: space-between;      
   }
 
   .footer-social-wrapper .circle {
@@ -449,11 +459,11 @@ body {
   }
 
   .headline-social {
-   font-weight: 700;
+      font-weight: 700;
       font-size: 14px;
       line-height: 1.14;
       letter-spacing: 0.03em;
       text-transform: uppercase;
       color: var(--white-color);
-      margin: 0;
+      margin: 0 0 20px;
   }
